@@ -18,4 +18,8 @@ urlpatterns = [
     path('product/<int:pk>/edit/', views.product_edit, name='product_edit'),
     path('product/<int:pk>/delete/', views.product_delete, name='product_delete'),
     path('customer/<int:pk>/summary/', views.summary, name='summary'),
+    path('reset_password/', views.PasswordResetView.as_view(), name='reset_password'),
+    path('reset_password/done/', views.PasswordResetDoneView.as_view(), name='reset_password_done'),
+    path('reset_confirmation/<uidb64>/<token>', views.PasswordResetConfirmView.as_view(), name='reset_password_confirmation'),
+    path('reset/done/', views.PasswordResetCompleteView.as_view(), name='reset_password_complete'),
 ]

@@ -5,6 +5,8 @@ from .models import *
 from .forms import *
 from django.shortcuts import render, get_object_or_404
 from django.shortcuts import redirect
+from django.contrib.auth import views as auth_views, forms as auth_forms
+from django.urls import reverse_lazy
 
 
 
@@ -144,3 +146,25 @@ def summary(request, pk):
                                                 'sum_product_charge': sum_product_charge,
                                                 'thecustomer':customer,
                                                 })
+
+
+class PasswordResetView(auth_views.PasswordResetView):
+    form_class = auth_forms.PasswordResetForm
+    template_name = 'crm/reset_password.html'
+    email_template_name = 'crm/reset_password_email.html'
+    success_url = reverse_lazy('crm:reset_password_done')
+
+class PasswordResetDoneView(auth_views.PasswordResetDoneView):
+    form_class = auth_forms.PasswordResetForm
+    template_name = 'crm/reset_password_done.html'
+    #success_url = reverse_lazy('reset_password_done')
+
+class PasswordResetConfirmView(auth_views.PasswordResetConfirmView):
+    form_class = auth_forms.SetPasswordForm
+    template_name = 'crm/reset_password_confirm.html'
+    success_url = reverse_lazy('crm:reset_password_complete')
+
+class PasswordResetCompleteView(auth_views.PasswordResetCompleteView):
+    form_class = auth_forms.PasswordResetForm
+    template_name = 'crm/reset_password_complete.html'
+    #success_url = reverse_lazy('login.html')

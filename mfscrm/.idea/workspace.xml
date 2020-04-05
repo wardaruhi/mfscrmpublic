@@ -53,6 +53,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="mfscrm.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -98,6 +99,9 @@
       <workItem from="1586029250323" duration="9000" />
       <workItem from="1586029278691" duration="38000" />
       <workItem from="1586029383720" duration="37000" />
+      <workItem from="1586098993648" duration="180000" />
+      <workItem from="1586101862195" duration="6364000" />
+      <workItem from="1586114386458" duration="45000" />
     </task>
     <servers />
   </component>
@@ -109,9 +113,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="532" y="294" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1585935260356" />
-    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586029384214">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586114343719">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586029384214" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586114343719" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586114343719">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586114343719" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586114343719">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586114343719" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586114343719">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586114343719" />
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586114389569">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586114389569" />
   </component>
 </project>
